@@ -12,7 +12,7 @@ const STEPS = [
   { id: 1, label: "Personal details" },
   { id: 2, label: "Qualifications" },
   { id: 3, label: "Practice details" },
-  { id: 4, label: "Declarations" },
+  { id: 4, label: "Declarations" }
   { id: 5, label: "Review & pay" },
 ];
 
@@ -172,7 +172,7 @@ export default function ApplyFlow() {
                   <select className="input" value={(form.country as string) ?? ""} onChange={e => up("country", e.target.value)}>
                     <option value="">Select…</option>
                     <option>India</option><option>Sri Lanka</option><option>Nepal</option><option>Other</option>
-                  </select>
+                  </select
                 </label>
                 <label className="field"><span className="label">Year awarded</span>
                   <input className="input" value={(form.year as string) ?? ""} onChange={e => up("year", e.target.value)} placeholder="2015" />
@@ -304,7 +304,7 @@ export default function ApplyFlow() {
                   <dl className="kv">
                     {section.rows.map(([k, v]) => (
                       <>
-                        <dt key={`${k}-dt`}>{k}</dt>
+                        <dt key={`${k}-dt`}>{String(k)}</dt>
                         <dd key={`${k}-dd`}>{String(v ?? "—")}</dd>
                       </>
                     ))}
