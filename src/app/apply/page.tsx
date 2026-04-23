@@ -302,7 +302,7 @@ export default function ApplyFlow() {
                 <div key={section.title} className="card soft" style={{ marginTop: 14 }}>
                   <h4 style={{ marginBottom: 10 }}>{section.title}</h4>
                   <dl className="kv">
-                    {section.rows.map(([k, v]: [string, unknown]) => (
+                    {(section.rows as [string, unknown][]).map(([k, v]) => (
                       <>
                         <dt key={`${k}-dt`}>{String(k)}</dt>
                         <dd key={`${k}-dd`}>{v != null && v !== false ? String(v as never) : "—"}</dd>
