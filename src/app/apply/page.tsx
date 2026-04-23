@@ -172,7 +172,7 @@ export default function ApplyFlow() {
                   <select className="input" value={(form.country as string) ?? ""} onChange={e => up("country", e.target.value)}>
                     <option value="">Select…</option>
                     <option>India</option><option>Sri Lanka</option><option>Nepal</option><option>Other</option>
-                  </select
+                  </select>
                 </label>
                 <label className="field"><span className="label">Year awarded</span>
                   <input className="input" value={(form.year as string) ?? ""} onChange={e => up("year", e.target.value)} placeholder="2015" />
