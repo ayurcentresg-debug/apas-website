@@ -305,7 +305,7 @@ export default function ApplyFlow() {
                     {section.rows.map(([k, v]) => (
                       <>
                         <dt key={`${k}-dt`}>{k}</dt>
-                        <dd key={`${k}-dd`}>{v ? String(v) : "—"}</dd>
+                        <dd key={`${k}-dd`}>{String(v ?? "—")}</dd>
                       </>
                     ))}
                   </dl>
