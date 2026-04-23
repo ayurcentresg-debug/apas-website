@@ -12,7 +12,7 @@ const STEPS = [
   { id: 1, label: "Personal details" },
   { id: 2, label: "Qualifications" },
   { id: 3, label: "Practice details" },
-  { id: 4, label: "Declarations" }
+  { id: 4, label: "Declarations" },
   { id: 5, label: "Review & pay" },
 ];
 
